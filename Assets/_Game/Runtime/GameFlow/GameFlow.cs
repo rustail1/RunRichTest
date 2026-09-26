@@ -1,6 +1,4 @@
 using System;
-using RunRich.Runtime.Level;
-
 namespace RunRich.Runtime.Flow
 {
     public enum GameFlowState
@@ -13,12 +11,7 @@ namespace RunRich.Runtime.Flow
 
     public sealed class GameFlow
     {
-        private readonly ILevelService _levelService;
-
-        public GameFlow(ILevelService levelService)
-        {
-            _levelService = levelService ?? throw new ArgumentNullException(nameof(levelService));
-        }
+        public event Action<GameFlowState> StateChanged;
 
         public GameFlowState State { get; private set; } = GameFlowState.Ready;
 
@@ -26,7 +19,7 @@ namespace RunRich.Runtime.Flow
         {
             if (State == GameFlowState.Ready)
             {
-                State = GameFlowState.Playing;
+                SetState(GameFlowState.Playing);
             }
         }
 
@@ -34,7 +27,7 @@ namespace RunRich.Runtime.Flow
         {
             if (State == GameFlowState.Playing)
             {
-                State = GameFlowState.Won;
+                SetState(GameFlowState.Won);
             }
         }
 
@@ -42,20 +35,14 @@ namespace RunRich.Runtime.Flow
         {
             if (State == GameFlowState.Playing)
             {
-                State = GameFlowState.Lost;
+                SetState(GameFlowState.Lost);
             }
         }
 
-        public void Restart()
+        private void SetState(GameFlowState state)
         {
-            _levelService.Restart();
-            State = GameFlowState.Ready;
-        }
-
-        public void LoadNext()
-        {
-            _levelService.LoadNext();
-            State = GameFlowState.Ready;
+            State = state;
+            StateChanged?.Invoke(State);
         }
     }
 }

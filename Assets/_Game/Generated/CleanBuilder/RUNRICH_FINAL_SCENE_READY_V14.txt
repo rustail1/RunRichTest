@@ -1,0 +1,1 @@
+Run Rich V14 final scene auto-setup completed after strict rebuild + validation. Delete this file and use Tools > Run Rich > FINALIZE COMPLETE SCENE to rebuild again.

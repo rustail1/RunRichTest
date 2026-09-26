@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0bcfd182524baaa675c4abd216bae5, type: 3}
+  m_Name: RunnerConfig
+  m_EditorClassIdentifier: Assembly-CSharp::RunRich.Data.Configs.RunnerConfigSO
+  forwardSpeed: 8
+  slowSpeedWhenPoor: 0
+  startDelay: 0
+  swerveSensitivity: 20
+  roadHalfWidth: 2.5
+  lateralMaxSpeed: 80
+  lateralSmoothTime: 0.1
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  wallRaycastDistance: 100
+  wallRaycastPadding: 0.3
+  maxTurnAngle: 35
+  visualRotationSpeed: 10
+  showSwerveDebug: 0
+  pathRotationSmoothTime: 0.07
+  curveSamplesPerSegment: 40
+  configDataVersion: 2

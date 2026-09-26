@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985b8cc5c20244a4a9d94b4d0fe7acf9, type: 3}
+  m_Name: CameraConfig
+  m_EditorClassIdentifier: Assembly-CSharp::RunRich.Data.Configs.CameraConfigSO
+  fieldOfView: 60
+  nearClipPlane: 0.3
+  farClipPlane: 500
+  followSmoothTime: 0.01
+  followTargetOnX: 1
+  startLocalPosition: {x: 0, y: 2.65, z: -4.82}
+  startLocalEuler: {x: 17, y: 0, z: 0}
+  gameLocalPosition: {x: 0, y: 3.38, z: -5.39}
+  gameLocalEuler: {x: 21.33, y: 0, z: 0}
+  gameNewLocalPosition: {x: 0, y: 5.56, z: -4.72}
+  gameNewLocalEuler: {x: 31.655, y: 0, z: 0}
+  gameOverLocalPosition: {x: 0, y: 3.14, z: -8}
+  gameOverLocalEuler: {x: 25.548, y: 0, z: 0}
+  winOrbitDuration: 6

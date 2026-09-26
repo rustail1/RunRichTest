@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a03e97475ab42fdaa11a54f5af23d52, type: 3}
+  m_Name: WealthConfig
+  m_EditorClassIdentifier: Assembly-CSharp::RunRich.Data.Configs.WealthConfigSO
+  initialWealth: 40
+  minimumWealth: 0
+  maximumWealth: 140
+  changeSpeed: 140
+  gameOverAtZero: 1
+  waitOneMoreErrorAtZero: 1
+  hoboThreshold: 0
+  poorThreshold: 31
+  decentThreshold: 61
+  richThreshold: 101
+  millionaireThreshold: 139

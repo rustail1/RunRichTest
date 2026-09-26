@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ground2
-  m_Shader: {fileID: 4800000, guid: f53a9e1422a8eac428da37bcb9656c49, type: 3}
+  m_Shader: {fileID: 4800000, guid: 92da16dc32e40f34eab13f2405fbe2a2, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _EMISSION
